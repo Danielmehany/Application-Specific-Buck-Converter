@@ -82,7 +82,8 @@ P_loss = I²·DCR + P_extvcc + P_sw + P_coss + P_gate + I²·Rds
 
 ## Board
 <img width="476" height="185" alt="image" src="https://github.com/user-attachments/assets/05e1604e-68d2-487f-a719-949b01d266cb" />
-<img width="422" height="185" alt="image" src="https://github.com/user-attachments/assets/2d87a277-1e71-43d8-9d8b-10937f2100b1" />
+<img width="476" height="185" alt="image" src="https://github.com/user-attachments/assets/6e79f985-2db1-4683-a285-294918274f25" />
+
 
 
 
