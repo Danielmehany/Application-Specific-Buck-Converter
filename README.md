@@ -61,7 +61,7 @@ P_gate = 2·Qg·VINTVCC·fsw = 2·49nC·5V·300k = 150 mW
 ## Efficiency
  
 ```
-P_loss = I²·DCR + P_extvcc + P_sw + P_coss + P_gate + I²·Rds + I_rms²·ESR
+P_loss = I²·DCR + P_extvcc + P_sw + P_coss + P_gate + I²·Rds + I_Cin²·ESR + I_Cout²·ESR
 ```
  
 | Loss | Formula | mW |
@@ -72,7 +72,8 @@ P_loss = I²·DCR + P_extvcc + P_sw + P_coss + P_gate + I²·Rds + I_rms²·ESR
 | Coss | `½·Coss·Vin²·fsw` | 165 |
 | Gate drive | `2·Qg·VINTVCC·fsw` | 150 |
 | Conduction | `I²·Rds` | 130 |
-| Cap ESR (Cin + Cout) | `I_rms²·ESR` | 8 |
+| Cin ESR | `(Iout·√(D(1−D)))²·ESR` | 8 |
+| Cout ESR | `(ΔI_L/√12)²·ESR` | <1 |
  
 ```
 η = Pout/(Pout + P_loss) = 120/(120 + 1.77) ≈ 98.5 %
